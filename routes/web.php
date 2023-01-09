@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TravelController;
+use App\Http\Controllers\DestinationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [TravelController::class, 'index'])->middleware(['auth'])->name('index');
+Route::post('/travels/create',[TravelController::class, 'create']);
+Route::post('/travels/edit', [TravelController::class, 'update']);
+Route::post('/travels/delete', [TravelController::class, 'remove']);
+Route::get('/destinations/{travel_id}', 
+[DestinationController::class, 'index'])->name('destination.index');
+Route::get('/destinatitons/{travel_id}/add', [DestinationController::class, 'add'])->name('destination.add');
+Route::post('/destinatitons/create', [DestinationController::class, 'create']);
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
+

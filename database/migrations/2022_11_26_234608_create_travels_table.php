@@ -15,7 +15,7 @@ class CreateTravelsTable extends Migration
     {
         Schema::create('travels', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->unsigned();
+            $table->foreignId('user_id');
             $table->string('title');
             $table->date('start_date');
             $table->date('end_date');

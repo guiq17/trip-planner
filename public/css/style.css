@@ -1,0 +1,170 @@
+.container-img {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.card {
+  background-color: #fff;
+  width: 40vw;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.start-date {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.end-date {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.input-add-date {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-add {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.button-add {
+  width: 20%;
+  text-align: center;
+  border: 2px solid #dc70fa;
+  font-size: 12px;
+  color: #dc70fa;
+  background-color: #fff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  outline: none;
+}
+
+.input-update {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.button-update {
+  text-align: left;
+  border: 2px solid #fa9770;
+  font-size: 12px;
+  color: #fa9770;
+  background-color: #fff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  outline: none;
+}
+
+.button-delete {
+  text-align: left;
+  border: 2px solid #71fadc;
+  font-size: 12px;
+  color: #71fadc;
+  background-color: #fff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  outline: none;
+}
+
+.button-detail {
+  text-align: left;
+  border: 2px solid #71fadc;
+  font-size: 12px;
+  color: #71fadc;
+  background-color: #fff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  outline: none;
+}
+
+table {
+  text-align: center;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+tr {
+  height: 30px;
+}
+
+.date-update {
+  display: flex;
+}
+
+.input-date-update {
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  font-size: 12px;
+  outline: none;
+}

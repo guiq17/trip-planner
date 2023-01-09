@@ -15,7 +15,7 @@ class CreateDestinationsTable extends Migration
     {
         Schema::create('destinations', function (Blueprint $table) {
             $table->id();
-            $table->integer('travel_id')->unsigned();
+            $table->foreignId('travel_id');
             $table->string('title');
             $table->date('date');
             $table->time('time');
