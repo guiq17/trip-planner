@@ -11,4 +11,9 @@ class Destination extends Model
 
     protected $table = 'destinations';
     protected $fillable = ['travel_id', 'title', 'date', 'time', 'memo'];
+
+    public function travel()
+    {
+        return $this->belongsTo('App\Models\Travel');
+    }
 }

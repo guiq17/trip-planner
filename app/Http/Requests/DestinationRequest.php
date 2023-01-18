@@ -24,7 +24,18 @@ class DestinationRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => 'required',
+            'date' => 'required',
+            'time' => 'required',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'title.required' => 'タイトルを入力してください',
+            'date.required' => '開始日を入力してください',
+            'time' => '時間を入力してください',
         ];
     }
 }

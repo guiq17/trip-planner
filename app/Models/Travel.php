@@ -11,4 +11,9 @@ class Travel extends Model
 
     protected $table = 'travels';
     protected $fillable = ['user_id', 'title', 'start_date', 'end_date'];
+
+    public function destinations()
+    {
+        return $this->hasMany('App\Models\Destination');
+    }
 }
