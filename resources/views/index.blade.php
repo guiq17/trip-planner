@@ -12,7 +12,7 @@
   <div class="container">
     <img src="img/summer_travel.jpg" alt="" class="container-img">
     <div class="card">
-      <p class="title">Trip Planner</p>
+      <p class="title">旅のしおり</p>
       <div class="travel">
         <form action="/travels/create" class="flex mb-30" method="post">
           @csrf

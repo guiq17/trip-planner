@@ -21,8 +21,10 @@ Route::post('/travels/edit', [TravelController::class, 'update']);
 Route::post('/travels/delete', [TravelController::class, 'remove']);
 Route::get('/destinations/{travel_id}', 
 [DestinationController::class, 'index'])->name('destination.index');
-Route::get('/destinatitons/{travel_id}/add', [DestinationController::class, 'add'])->name('destination.add');
-Route::post('/destinatitons/create', [DestinationController::class, 'create']);
+Route::get('/destinations/{travel_id}/add', [DestinationController::class, 'add'])->name('destination.add');
+Route::post('/destinations/create', [DestinationController::class, 'create']);
+Route::post('/destinations/edit', [DestinationController::class, 'update']);
+Route::post('/destinations/delete/{id}', [DestinationController::class, 'remove']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

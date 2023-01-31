@@ -12,7 +12,8 @@ class TravelController extends Controller
 {
     public function index()
     {
-        $travels = Travel::all();
+        $user = Auth::user();
+        $travels = Travel::where('user_id', $user->id);
         return view('index', [
             'travels' => $travels
         ]);
