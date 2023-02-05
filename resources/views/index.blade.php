@@ -11,6 +11,9 @@
 <body>
   <div class="container">
     <img src="img/summer_travel.jpg" alt="" class="container-img">
+    <header>
+      
+    </header>
     <div class="card">
       <p class="title">旅のしおり</p>
       <div class="travel">
