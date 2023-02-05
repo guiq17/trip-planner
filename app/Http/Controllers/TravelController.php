@@ -13,7 +13,7 @@ class TravelController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $travels = Travel::where('user_id', $user->id);
+        $travels = Travel::where('user_id', $user->id)->get();
         return view('index', [
             'travels' => $travels
         ]);
