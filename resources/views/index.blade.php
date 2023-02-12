@@ -50,7 +50,9 @@
               <input type="date" class="input-add-date" name="end_date" id="end_date">
             </div>
           </div>
-          <input type="submit" class="button-add" value="追加">
+          <div>
+            <input type="submit" class="button-add" value="追加">
+          </div>
         </form>
         <table>
           <tr>

@@ -7,7 +7,7 @@
 
 .card {
   background-color: #fff;
-  width: 40vw;
+  width: 30vw;
   padding: 30px;
   position: absolute;
   top: 50%;
@@ -19,21 +19,21 @@
 .flex {
   display: flex;
   flex-direction: column;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .back_btn {
   width: 50px;
   padding: 5px 5px;
   color: #fff;
-  border-radius: 15px;
+  border-radius: 10px;
+  font-size: smaller;
   background: gray;
   text-align: center;
   display: block;
 }
 
 .button-add {
-  width: 20%;
   text-align: center;
   border: 2px solid #dc70fa;
   font-size: 12px;
@@ -41,6 +41,7 @@
   background-color: #fff;
   font-weight: bold;
   padding: 8px 16px;
+  margin: 10px 0 0;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.4s;
@@ -49,7 +50,50 @@
 
 label {
   display: inline-block;
-  text-align: right;
-  width: 150px;
+  text-align: left;
+  width: 80px;
 }
 
+.title {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.date {
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.time {
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.memo {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  font-size: 14px;
+  outline: none;
+}
+
+textarea {
+  vertical-align: top;
+}
+
+.create {
+  margin-bottom: 10px;
+}

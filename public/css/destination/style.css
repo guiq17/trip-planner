@@ -20,7 +20,8 @@
   width: 50px;
   padding: 5px 5px;
   color: #fff;
-  border-radius: 15px;
+  font-size: smaller;
+  border-radius: 10px;
   background: gray;
   text-align: center;
   display: block;

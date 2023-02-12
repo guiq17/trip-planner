@@ -113,7 +113,6 @@ li {
 }
 
 .button-add {
-  width: 20%;
   text-align: center;
   border: 2px solid #dc70fa;
   font-size: 12px;
@@ -145,6 +144,7 @@ li {
   background-color: #fff;
   font-weight: bold;
   padding: 8px 16px;
+  margin-left: 10px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.4s;
@@ -195,10 +195,6 @@ tr {
 
 td.list {
   padding-bottom: 10px;
-}
-
-td.btn {
-
 }
 
 .date-update {

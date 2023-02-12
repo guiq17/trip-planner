@@ -21,29 +21,33 @@
               <li>{{$message}}</li>
             </ul>
             @enderror
-            <input type="hidden" name="travel_id" value="{{$travel->id}}">
-            <label for="title" class="mb-5">タイトル</label>
-            <input type="text" class="input-add" name="title">
-            <div class="date">
-              @error('date')
-              <ul>
-                <li>{{$message}}</li>
-              </ul>
-              @enderror
-              <label for="date" class="mb-5">日付</label>
-              <input type="date" class="input-add-date" name="date" id="date">
+            <div class="create">
+              <input type="hidden" name="travel_id" value="{{$travel->id}}">
+              <label for="title">タイトル</label>
+              <input type="text" class="title" name="title">
             </div>
-            <div class="time">
-              @error('time')
-              <ul>
-                <li>{{$message}}</li>
-              </ul>
-              @enderror
-              <label for="time" class="mb-5">開始時間</label>
-              <input type="time" class="input-add-date" name="time" id="time">
+            @error('date')
+            <ul>
+              <li>{{$message}}</li>
+            </ul>
+            @enderror
+            <div class="create">
+              <label for="date">日付</label>
+              <input type="date" class="date" name="date" id="date">
             </div>
-            <label for="memo" class="mb-5">メモ</label>
-            <textarea name="memo" id="" cols="30" rows="10"></textarea>
+            @error('time')
+            <ul>
+              <li>{{$message}}</li>
+            </ul>
+            @enderror
+            <div class="create">
+              <label for="time">開始時間</label>
+              <input type="time" class="time" name="time" id="time">
+            </div>
+            <div class="create">
+              <label for="memo">メモ</label>
+              <textarea name="memo" id="" cols="30" rows="10" class="memo"></textarea>
+            </div>
           </div>
           <div>
             <input type="submit" class="button-add" value="追加">
