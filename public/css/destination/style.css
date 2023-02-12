@@ -25,3 +25,91 @@
   text-align: center;
   display: block;
 }
+
+.button-update {
+  text-align: left;
+  border: 2px solid #fa9770;
+  font-size: 12px;
+  color: #fa9770;
+  background-color: #fff;
+  font-weight: bold;
+  padding: 5px 16px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  outline: none;
+}
+
+.button-delete {
+  text-align: left;
+  border: 2px solid #71fadc;
+  font-size: 12px;
+  color: #71fadc;
+  background-color: #fff;
+  font-weight: bold;
+  padding: 5px 16px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  outline: none;
+}
+
+.button-add-detail {
+  text-align: left;
+  border: 2px solid firebrick;
+  font-size: 12px;
+  color: firebrick;
+  background-color: #fff;
+  font-weight: bold;
+  padding: 5px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  outline: none;
+}
+
+.title {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.time {
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.memo {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.list {
+  display: flex;
+}
+
+.itinerary-date {
+  margin: 20px 0 5px;
+}
+
+.trip-title {
+  margin: 15px 0 5px;
+}
+
+.trip-period {
+  margin: 0 0 15px;
+  font-size: smaller;
+}

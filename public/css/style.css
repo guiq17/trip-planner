@@ -4,6 +4,44 @@
   position: relative;
 }
 
+.nav {
+  position: absolute;
+  top: 3%;
+  left: 78%;
+}
+
+ul {
+  text-align: right;
+}
+
+li {
+  display: inline;
+}
+
+.register {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background: gray;
+  color: #fff;
+}
+
+.login {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background: gray;
+  color: #fff;
+}
+
+.logout {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background: gray;
+  color: #fff;
+}
+
 .card {
   background-color: #fff;
   width: 40vw;
@@ -153,6 +191,14 @@ table {
 
 tr {
   height: 30px;
+}
+
+td.list {
+  padding-bottom: 10px;
+}
+
+td.btn {
+
 }
 
 .date-update {

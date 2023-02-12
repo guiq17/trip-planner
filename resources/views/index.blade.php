@@ -11,6 +11,13 @@
 <body>
   <div class="container">
     <img src="img/summer_travel.jpg" alt="" class="container-img">
+    <div class="nav">
+      <ul>
+        <li><a href="{{route('register')}}" class="register">新規登録</a></li>
+        <li><a href="{{route('login')}}" class="login">ログイン</a></li>
+        <li><a href="{{route('logout')}}" class="logout">ログアウト</a></li>
+      </ul>
+    </div>
     <div class="card">
       <p class="title">旅のしおり</p>
       <div class="travel">
@@ -56,7 +63,7 @@
           <tr>
             <form action="/travels/edit" method="post">
               @csrf
-              <td>
+              <td class="list">
                 <input type="hidden" name="id" value={{$travel->id}}>
                 <input type="text" class="input-update" name="title" value={{$travel->title}}>
                 <div class="date-update">
@@ -65,17 +72,17 @@
                   <input type="date" class="input-date-update" name="end_date" value={{$travel->end_date}}>
                 </div>
               </td>
-              <td>
+              <td class="btn">
                 <input type="submit" class="button-update" value="更新">
               </td>
             </form>
             <form action="/travels/delete" method="post">
               @csrf
-              <td>
+              <td class="btn">
                 <input type="hidden" name="id" value={{$travel->id}}>
                 <input type="submit" class="button-delete" value="削除">
               </td>
-              <td>
+              <td class="btn">
                 <a href="{{route('destination.index', ['travel_id' => $travel->id])}}">
                   <button type="button" class="button-detail" value="詳細">詳細</button>
                 </a>
