@@ -24,7 +24,7 @@ Route::get('/destinations/{travel_id}',
 Route::get('/destinations/{travel_id}/add', [DestinationController::class, 'add'])->name('destination.add');
 Route::post('/destinations/create', [DestinationController::class, 'create']);
 Route::post('/destinations/edit', [DestinationController::class, 'update']);
-Route::post('/destinations/delete/{id}', [DestinationController::class, 'remove']);
+Route::post('/destinations/delete/{id}', [DestinationController::class, 'remove']);Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

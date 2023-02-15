@@ -13,8 +13,6 @@
     <img src="img/summer_travel.jpg" alt="" class="container-img">
     <div class="nav">
       <ul>
-        <li><a href="{{route('register')}}" class="register">新規登録</a></li>
-        <li><a href="{{route('login')}}" class="login">ログイン</a></li>
         <li><a href="{{route('logout')}}" class="logout">ログアウト</a></li>
       </ul>
     </div>

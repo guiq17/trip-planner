@@ -7,7 +7,7 @@
 .nav {
   position: absolute;
   top: 3%;
-  left: 78%;
+  left: 90%;
 }
 
 ul {
@@ -16,22 +16,6 @@ ul {
 
 li {
   display: inline;
-}
-
-.register {
-  padding: 5px 10px;
-  margin-left: 10px;
-  border-radius: 5px;
-  background: gray;
-  color: #fff;
-}
-
-.login {
-  padding: 5px 10px;
-  margin-left: 10px;
-  border-radius: 5px;
-  background: gray;
-  color: #fff;
 }
 
 .logout {
