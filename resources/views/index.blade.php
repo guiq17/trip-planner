@@ -13,7 +13,9 @@
     <img src="img/summer_travel.jpg" alt="" class="container-img">
     <div class="nav">
       <ul>
-        <li><a href="{{route('logout')}}" class="logout">ログアウト</a></li>
+        <li>
+          
+        </li>
       </ul>
     </div>
     <div class="card">
@@ -64,12 +66,12 @@
             <form action="/travels/edit" method="post">
               @csrf
               <td class="list">
-                <input type="hidden" name="id" value={{$travel->id}}>
-                <input type="text" class="input-update" name="title" value={{$travel->title}}>
+                <input type="hidden" name="id" value="{{$travel->id}}">
+                <input type="text" class="input-update" name="title" value="{{$travel->title}}">
                 <div class="date-update">
-                  <input type="hidden" name="id" value={{$travel->id}}>
-                  <input type="date" class="input-date-update" name="start_date" value={{$travel->start_date}}>
-                  <input type="date" class="input-date-update" name="end_date" value={{$travel->end_date}}>
+                  <input type="hidden" name="id" value="{{$travel->id}}">
+                  <input type="date" class="input-date-update" name="start_date" value="{{$travel->start_date}}">
+                  <input type="date" class="input-date-update" name="end_date" value="{{$travel->end_date}}">
                 </div>
               </td>
               <td class="btn">
@@ -79,7 +81,7 @@
             <form action="/travels/delete" method="post">
               @csrf
               <td class="btn">
-                <input type="hidden" name="id" value={{$travel->id}}>
+                <input type="hidden" name="id" value="{{$travel->id}}">
                 <input type="submit" class="button-delete" value="削除">
               </td>
               <td class="btn">

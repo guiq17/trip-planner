@@ -29,9 +29,9 @@
             <div class="edit">
               <form action="/destinations/edit" method="post">
               @csrf
-              <input type="hidden" name="destination_id" value={{$destination->id}}>
-              <input type="hidden" name="travel_id" value={{$destination->travel_id}}>
-              <input type="text" class="title" name="title" value={{$destination->title}}>
+              <input type="hidden" name="destination_id" value="{{$destination->id}}">
+              <input type="hidden" name="travel_id" value="{{$destination->travel_id}}">
+              <input type="text" class="title" name="title" value="{{$destination->title}}">
               <input type="time" class="time" name="time" value="{{$destination->time}}">
               <input type="text" class="memo" name="memo" value="{{$destination->memo}}">
               <input type="submit" class="button-update" value="更新">
@@ -40,8 +40,8 @@
             <div class="delete">
               <form action="/destinations/delete/{$destination->id}" method="post">
               @csrf
-              <input type="hidden" name="travel_id" value={{$destination->travel_id}}>
-              <input type="hidden" name="id" value={{$destination->id}}>
+              <input type="hidden" name="travel_id" value="{{$destination->travel_id}}">
+              <input type="hidden" name="id" value="{{$destination->id}}">
               <input type="submit" class="button-delete" value="削除">
               </form>
             </div>
