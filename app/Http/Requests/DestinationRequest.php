@@ -35,7 +35,7 @@ class DestinationRequest extends FormRequest
         return [
             'title.required' => 'タイトルを入力してください',
             'date.required' => '開始日を入力してください',
-            'time' => '時間を入力してください',
+            'time.required' => '時間を入力してください',
         ];
     }
 }

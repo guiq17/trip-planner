@@ -29,9 +29,19 @@
             <div class="edit">
               <form action="/destinations/edit" method="post">
               @csrf
+              @error('title')
+              <ul>
+                <li>{{$message}}</li>
+              </ul>
+              @enderror
               <input type="hidden" name="destination_id" value="{{$destination->id}}">
               <input type="hidden" name="travel_id" value="{{$destination->travel_id}}">
               <input type="text" class="title" name="title" value="{{$destination->title}}">
+              @error('time')
+              <ul>
+                <li>{{$message}}</li>
+              </ul>
+              @enderror
               <input type="time" class="time" name="time" value="{{$destination->time}}">
               <input type="text" class="memo" name="memo" value="{{$destination->memo}}">
               <input type="submit" class="button-update" value="更新">
